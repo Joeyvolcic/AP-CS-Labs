@@ -1,0 +1,70 @@
+package Unit6Assignments;
+
+public class Lab1_2DArrays {
+		public static void main(String [] args) {
+			double sum = 0;
+			int evencount = 0;
+			double average = 0;
+			int count = 5;
+			int even = 0;
+			int [][] box = new int [5][5];
+			int [][] randomBox = new int[5][5];
+			
+			for(int a = 0; a < box.length; a++) 
+			{
+				for(int b = 0; b < box[0].length; b++) 
+				{
+				box[a][b] = box[a][b];	
+				}
+			}
+			for(int a = 0; a < box.length; a++)
+			{
+				for(int b = 0; b < box[0].length; b++) 
+				{
+					System.out.print(b + " ");
+				}
+				System.out.println();
+			}
+			System.out.println();
+			for(int a = 0; a < randomBox.length; a++) 
+			{
+				for(int b = 0; b < randomBox[0].length; b++) 
+				{
+				randomBox[a][b] = (count - b);	
+				sum += randomBox[a][b];
+				}
+				count += 5;
+			}
+			for(int a = 0; a < randomBox.length; a++)
+			{
+				for(int b = 0; b < randomBox[0].length; b++) 
+				{
+					System.out.print(randomBox[a][b] + " ");
+				}
+				System.out.println();
+			}
+			
+			average = (sum / 25);
+			System.out.println();
+			System.out.println("Average: " + average);
+			System.out.println();
+			count = 5;
+			
+			for(int a = 0; a < randomBox.length; a++) {
+				for(int b = 0; b < randomBox[0].length; b++) {
+					if((count - b) % 2 == 0) {
+					randomBox[a][b] = 0;
+					}else 
+						randomBox[a][b] = count-b;
+					
+					}
+				count += 5;
+			}
+			for(int a = 0; a < randomBox.length; a++) {
+				for(int b = 0; b < randomBox[0].length; b++) {
+					System.out.print(randomBox[a][b] + " ");
+				}
+				System.out.println();
+			}
+		}
+}
