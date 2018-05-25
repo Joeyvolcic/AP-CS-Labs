@@ -1,0 +1,18 @@
+package Unit6Assignments;
+
+public class Lab2_classesTester {
+	public static void main (String [] args){
+		student[] c2 = {new student ("Heidrekur Sigurbergsson ", "53245193", 3.8, 3.5, 4.0),new student ("Nikolas Lukiboniv       ", "12311539", 3.4, 3.6, 3.8),new student ("Ish Sigurberg           ", "96237845", 4.0, 4.1, 2.2)}; 
+		System.out.println("Name                       ID        Math GPA    lang GPA    Science GPA    Average GPA");
+		System.out.println("_____________________________________________________________________________________");
+		for(int a = 0; a < c2.length; a++ ) {
+			System.out.print(c2[a].getname() + " "); 
+			System.out.print( c2[a].getstudentnumber() + "     "); 
+			System.out.print(c2[a].getmathGPA() + "          "); 
+			System.out.print(c2[a].getlangGPA() + "         ");
+			System.out.print(c2[a].getscienceGPA() + "             ");
+			System.out.println(+ c2[a].getaverageGPA() + " "); 
+		}
+}
+}
+
