@@ -1,0 +1,11 @@
+s = str(input())
+x = int(s.count('f'))
+lengt = int(len(s))
+if x < 3:
+	for i in range(lengt):
+		if s[i] == 'f':
+			print(i, end = "")
+else:
+	print(s.find('f'), s.rfind('f'))
+if x == 0:
+	print(-1)
