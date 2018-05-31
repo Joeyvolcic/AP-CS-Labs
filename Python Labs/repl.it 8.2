@@ -1,0 +1,12 @@
+x = [int(s) for s in input().split()]
+a = [[int(j) for j in input().split()] for i in range(x[0])]
+y = 0
+z = 0
+e = 0
+for i in range(x[0]):
+	if max(a[i]) > y:
+		y = max(a[i])
+		z = i
+		e = a[i].index(y)
+print(z ,end = " ")
+print(e)
