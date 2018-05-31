@@ -1,0 +1,26 @@
+import math
+n = str(input())
+length = int(len(n))
+print(n[2])
+print(n[length - 2])
+print(n[0:5])
+print(n[0:length - 2])
+
+for i in range(length):
+	if i % 2 == 0:
+		print(n[i], end = "")
+print()
+
+for i in range(length):
+	if i % 2 == 1:
+		print(n[i], end = "")
+print()
+
+for i in range(length):
+		print(n[length - i -1],end = "")
+print()
+
+for i in range(math.ceil(length / 2)):
+	print(n[length - (i * 2) - 1], end = "")
+print()
+print(length)
