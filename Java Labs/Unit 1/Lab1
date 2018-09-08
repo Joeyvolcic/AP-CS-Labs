@@ -3,18 +3,18 @@ package unit1assignments;
 public class lab1 {
 	public static void main(String [] args){
 	
-	System.out.print("Name: Joey Volcic  ");
-	System.out.print("Birthday: 06/13/02 ");
-	System.out.println("Age: 15  ");
+	System.out.print("Name:   ");
+	System.out.print("Birthday: ");
+	System.out.println("Age:   ");
 	System.out.println(" ");
 	System.out.print("School: Stoney Creek High School  ");	
-	System.out.print("Grade: 10  ");
+	System.out.print("Grade: ");
 	System.out.println("City: Rochester  ");
 	System.out.println("  ");
-	System.out.print("Home Phone: 248-601-0297  ");
+	System.out.print("Home Phone: 7  ");
 	System.out.println("Avalible: 7:00-10:30 pm S-Th");
 	System.out.println("  ");
-	System.out.print("Cell Phone: 248-759-3373");
+	System.out.print("Cell Phone: ");
 	
 	
 	
